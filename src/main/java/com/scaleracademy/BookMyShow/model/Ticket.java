@@ -19,7 +19,7 @@ import lombok.Setter;
 @Setter
 @Entity
 public class Ticket extends BaseEntity {
-	private String ticketNUmber;
+	private String ticketNumber;
 
 	@Enumerated(value = EnumType.STRING)
 	private TicketStatus ticketStatus;

@@ -9,6 +9,6 @@ import lombok.Setter;
 @Setter
 public class BookTicketResponseDto {
 	private String bookingId;
-	private int amount;
+	private double amount;
 	private ResponseStatus status;
 }
