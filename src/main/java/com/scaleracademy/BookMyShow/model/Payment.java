@@ -28,6 +28,6 @@ public class Payment extends BaseEntity {
 	private PaymentMode paymentMode;
 
 	@ManyToOne
-	@JoinColumn(name = "ticket_id")
-	private Booking ticket;
+	@JoinColumn(name = "booking_id")
+	private Booking booking;
 }

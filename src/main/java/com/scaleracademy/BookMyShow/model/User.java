@@ -15,6 +15,7 @@ public class User extends BaseEntity {
 	private String email;
 	private String name;
 	private String mobileNumber;
+	private String password;
 
 	@OneToMany(mappedBy = "user")
 	private List<Booking> tickets;

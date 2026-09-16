@@ -38,7 +38,7 @@ public class Booking extends BaseEntity {
 	@JoinColumn(name = "show_id")
 	private Show show;
 
-	@OneToMany(mappedBy = "ticket")
+	@OneToMany(mappedBy = "booking")
 	private List<Payment> payments;
 
 
