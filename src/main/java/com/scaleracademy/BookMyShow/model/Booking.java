@@ -2,7 +2,7 @@ package com.scaleracademy.BookMyShow.model;
 
 import java.util.List;
 
-import com.scaleracademy.BookMyShow.model.enums.TicketStatus;
+import com.scaleracademy.BookMyShow.model.enums.BookingStatus;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
@@ -18,11 +18,11 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity
-public class Ticket extends BaseEntity {
+public class Booking extends BaseEntity {
 	private String ticketNumber;
 
 	@Enumerated(value = EnumType.STRING)
-	private TicketStatus ticketStatus;
+	private BookingStatus ticketStatus;
 
 	private double amount;
 
@@ -39,5 +39,7 @@ public class Ticket extends BaseEntity {
 	private Show show;
 
 	@OneToMany(mappedBy = "ticket")
-	private List<Payment> paments;
+	private List<Payment> payments;
+
+
 }

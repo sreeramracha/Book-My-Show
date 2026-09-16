@@ -29,5 +29,5 @@ public class Payment extends BaseEntity {
 
 	@ManyToOne
 	@JoinColumn(name = "ticket_id")
-	private Ticket ticket;
+	private Booking ticket;
 }

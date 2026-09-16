@@ -17,5 +17,5 @@ public class User extends BaseEntity {
 	private String mobileNumber;
 
 	@OneToMany(mappedBy = "user")
-	private List<Ticket> tickets;
+	private List<Booking> tickets;
 }
